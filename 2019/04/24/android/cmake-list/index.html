@@ -133,37 +133,35 @@ find_library(log-lib log)
 #添加链接上面个所 find 和 add 的 library
 target_link_libraries(compress jpeg ${log-lib} ${graphics})
 </code></pre><h4 id="配置-Gradle"><a href="#配置-Gradle" class="headerlink" title="配置 Gradle"></a>配置 Gradle</h4><p>简单的配置如下，至于 cppFlags 或 cFlags 的参数有点复杂，一般设置为空或不设置也是可以的，这里就不过多介绍了</p>
-<pre><code>android {
+<pre><code class="cmake">android {
 compileSdkVersion 25
 buildToolsVersion &quot;25.0.3&quot;
 
 defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 1
-        versionName &quot;1.0&quot;
-        externalNativeBuild {
-           cmake {
-                // Passes optional arguments to CMake.
-                arguments 
-                &quot;-DANDROID_ARM_NEON=TRUE&quot;,
-                &quot;-DANDROID_TOOLCHAIN=clang&quot;
-                // Sets optional flags for the C compiler.
-                cFlags &quot;-D_EXAMPLE_C_FLAG1&quot;,&quot;-D_EXAMPLE_C_FLAG2&quot;
-                // Sets a flag to enable format macro constants for the C++ compiler.
-                cppFlags &quot;-D__STDC_FORMAT_MACROS&quot;
-                //生成.so库的目标平台
-                abiFilters &#39;x86&#39;,&#39;x86_64&#39;,&#39;armeabi&#39;,&#39;armeabi-v7a&#39;,&#39;arm64-v8a&#39;
-                }
-        }
-}
-//配置 CMakeLists.txt 路径
+    minSdkVersion 15
+    targetSdkVersion 25
+    versionCode 1
+    versionName &quot;1.0&quot;
     externalNativeBuild {
-
         cmake {
-
-            path &quot;CMakeLists.txt&quot;
-            }
+            // Passes optional arguments to CMake.
+            arguments 
+            &quot;-DANDROID_ARM_NEON=TRUE&quot;,
+            &quot;-DANDROID_TOOLCHAIN=clang&quot;
+            // Sets optional flags for the C compiler.
+            cFlags &quot;-D_EXAMPLE_C_FLAG1&quot;,&quot;-D_EXAMPLE_C_FLAG2&quot;
+            // Sets a flag to enable format macro constants for the C++ compiler.
+            cppFlags &quot;-D__STDC_FORMAT_MACROS&quot;
+            //生成.so库的目标平台
+            abiFilters &#39;x86&#39;,&#39;x86_64&#39;,&#39;armeabi&#39;,&#39;armeabi-v7a&#39;,&#39;arm64-v8a&#39;
+        }
     }
 }
-</code></pre></div><div class="tags"><a href="/tags/android/">android</a></div><div class="post-nav"><a class="pre" href="/2019/05/11/others/macos_terminal_themes/">MacOS Terminal 美化 【程序猿推荐】</a><a class="next" href="/2019/04/23/git/git-multi-account-manager/">Git 多github（gitlab）账号管理</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/others/" style="font-size: 15px;">others</a> <a href="/tags/android/" style="font-size: 15px;">android</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/04/c++/cplus_type_convert/">c++/cplus_type_convert</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/11/others/macos_terminal_themes/">MacOS Terminal 美化 【程序猿推荐】</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/24/android/cmake-list/">android studio cmake 编译常规设置</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/23/git/git-multi-account-manager/">Git 多github（gitlab）账号管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/19/david-blog/">David-Blog</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/19/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">David小硕.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+//配置 CMakeLists.txt 路径
+externalNativeBuild {
+     cmake {
+        path &quot;CMakeLists.txt&quot;
+    }
+}
+</code></pre>
+</div><div class="tags"><a href="/tags/android/">android</a></div><div class="post-nav"><a class="pre" href="/2019/05/11/others/macos_terminal_themes/">MacOS Terminal 美化 【程序猿推荐】</a><a class="next" href="/2019/04/23/git/git-multi-account-manager/">Git 多github（gitlab）账号管理</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/others/" style="font-size: 15px;">others</a> <a href="/tags/android/" style="font-size: 15px;">android</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/08/04/c++/cplus_type_convert/">c++/cplus_type_convert</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/11/others/macos_terminal_themes/">MacOS Terminal 美化 【程序猿推荐】</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/24/android/cmake-list/">android studio cmake 编译常规设置</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/23/git/git-multi-account-manager/">Git 多github（gitlab）账号管理</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/19/david-blog/">David-Blog</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/04/19/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">David小硕.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
