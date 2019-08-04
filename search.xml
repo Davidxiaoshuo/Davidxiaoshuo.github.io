@@ -8,7 +8,7 @@
       <link href="/menu/"/>
       <url>/menu/</url>
       
-        <content type="html"><![CDATA[<ul><li>Tech<ul><li>android<ul><li><a href="/android/cmake_list">android studio cmake 编译常规设置</a></li></ul></li><li>c++<ul><li><a href="/c++/cplus_type_convert">C++ 中 基础类型转换成 char*</a></li></ul></li><li>git<ul><li><a href="/git/git_multi_account_themes">Git 多github（gitlab）账号管理</a></li></ul></li><li>others<ul><li><a href="/others/hello_world">Hexo Page 简单发布流程</a></li><li><a href="/others/macos_terminal_themes">MacOS Terminal 美化 【程序猿推荐】</a></li></ul></li></ul></li><li>Life</li></ul>]]></content>
+        <content type="html"><![CDATA[<ul><li>Tech<ul><li>android<ul><li><a href="/android/cmake_list">android studio cmake 编译常规设置</a></li></ul></li><li>c++<ul><li><a href="/c++/cplus_type_convert">C++ 中 基础类型转换成 char*</a></li></ul></li><li>git<ul><li><a href="/git/git_multi_account_manager">Git 多github（gitlab）账号管理</a></li></ul></li><li>others<ul><li><a href="/others/hello_world">Hexo Page 简单发布流程</a></li><li><a href="/others/macos_terminal_themes">MacOS Terminal 美化 【程序猿推荐】</a></li></ul></li></ul></li><li>Life</li></ul>]]></content>
       
       
       
