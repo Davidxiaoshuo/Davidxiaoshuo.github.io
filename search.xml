@@ -5,10 +5,36 @@
     
     <entry>
       <title></title>
+      <link href="/c++/minicom_setup/"/>
+      <url>/c++/minicom_setup/</url>
+      
+        <content type="html"><![CDATA[<h1 id="usb-转串口工具-minicom-setup">USB 转串口工具 minicom Setup</h1><h3 id="准备工作">准备工作</h3><ol><li>安装 minicom 串口调试工具, 通过 Homebrew 安装即可</li></ol><pre><code class="language-bash">brew install minicom</code></pre><h3 id="setup">Setup</h3><ol><li>将串口线连接到电脑USB上，查看当前命令行查看连接的串口号</li></ol><pre><code class="language-bash">ls /dev/tty*</code></pre><p><img src="https://raw.githubusercontent.com/Davidxiaoshuo/blog_source/master/resources/images/serial_port_num.jpg" alt></p><blockquote><p><strong><em>上图中的 <code>/dev/tty.usbserial-14340</code> 就是 USB 的串口号</em></strong></p></blockquote><ol start="2"><li>将串口号配置给串口工具 <code>minicom</code></li></ol><ul><li>命令打开串口工具</li></ul><pre><code class="language-bash">minicom -s</code></pre><p><img src="https://raw.githubusercontent.com/Davidxiaoshuo/blog_source/master/resources/images/minicom_board.jpg" alt></p><ul><li>通过键盘上的 <code>J</code>, <code>K</code> 或者方向键上下移动到 <code>Serial port setup</code> 选项，按回车选中，进入串口设置界面</li></ul><p><img src="https://raw.githubusercontent.com/Davidxiaoshuo/blog_source/master/resources/images/minicom_setup.jpg" alt></p><ul><li>通过键盘上的大写字母 <code>A</code>  选中进入 <code>Serial Device</code> 选项，并将之前复制好的串口号粘贴在此，并按<strong><em>两次</em></strong>回车, 回到主 Setup 界面。</li><li>定位到 <code>Save setup as dfl</code> 回车并选中。</li><li>定位到 <code>Exit</code> 退出 Setup 界面到 串口命令终端中 或 定位到 <code>Exit from minicom</code> 退回到系统命令界面</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/c++/macos_remote_disk_mount/"/>
+      <url>/c++/macos_remote_disk_mount/</url>
+      
+        <content type="html"><![CDATA[<h1 id="macos-远程硬盘挂载">macos 远程硬盘挂载</h1><h3 id="准备工作">准备工作</h3><ol><li>安装Homebrew, 具体安装方式，见<a href="https://brew.sh/index_zh-cn.html" target="_blank" rel="noopener">官网</a></li><li>通过Homebrew 安装 sshfs 的依赖 <code>fuse</code></li></ol><pre><code class="language-bash">brew install Caskroom/cask/osxfuse</code></pre><ol start="3"><li>通过Homebrew 安装sshfs</li></ol><pre><code class="language-bash">brew install sshfs</code></pre><h3 id="使用">使用</h3><pre><code class="language-bash">sshfs remote_account@ip:remote_directory /local/directory</code></pre><blockquote><p><strong>挂在到本地时，避免挂在到根目录下或者当前账户的主目录下，否则会引起以下错误：</strong></p></blockquote><pre><code>mount_osxfuse: mount point /Users/xxxx/ImageFolder is itself on a OSXFUSE volumefuse: failed to mount file system: Invalid argument</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/menu/"/>
       <url>/menu/</url>
       
-        <content type="html"><![CDATA[<ul><li>Tech<ul><li>android<ul><li><a href="/android/cmake_list">android studio cmake 编译常规设置</a></li></ul></li><li>c++<ul><li><a href="/c++/cplus_type_convert">C++ 中 基础类型转换成 char*</a></li></ul></li><li>git<ul><li><a href="/git/git_multi_account_manager">Git 多github（gitlab）账号管理</a></li></ul></li><li>others<ul><li><a href="/others/hello_world">Hexo Page 简单发布流程</a></li><li><a href="/others/macos_terminal_themes">MacOS Terminal 美化 【程序猿推荐】</a></li></ul></li></ul></li><li>Life</li></ul>]]></content>
+        <content type="html"><![CDATA[<ul><li>Tech<ul><li>android<ul><li><a href="/android/cmake_list">android studio cmake 编译常规设置</a></li></ul></li><li>c++<ul><li><a href="/c++/cplus_type_convert">C++ 中 基础类型转换成 char*</a></li><li><a href="/c++/macos_remote_disk_mount">macos 远程硬盘挂载</a></li><li><a href="/c++/minicom_setup">USB 转串口工具 minicom Setup</a></li></ul></li><li>git<ul><li><a href="/git/git_multi_account_manager">Git 多github（gitlab）账号管理</a></li></ul></li><li>others<ul><li><a href="/others/hello_world">Hexo Page 简单发布流程</a></li><li><a href="/others/macos_terminal_themes">MacOS Terminal 美化 【程序猿推荐】</a></li></ul></li></ul></li><li>Life</li></ul>]]></content>
       
       
       

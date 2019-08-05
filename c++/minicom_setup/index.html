@@ -11,7 +11,7 @@
 
     <title>
         
-          C++ 中 基础类型转换成 char * - David小硕
+          David小硕
         
     </title>
 
@@ -163,59 +163,41 @@ ga('send', 'pageview');
 </div>
 
 <div class="book-post">
-  <h1 id="c-中-基础类型转换成-char">C++ 中 基础类型转换成 char*</h1>
-<p>有时候我们在项目中难免会用到，将基础数据类型转换成char*，这样会方面一些业务上的开展。前一阵子做基于mips 平台下 阿里云Log Service时候就用到了，由于考虑要封装sdk的轻量性，所以没有考虑依赖其他的系统库。</p>
-<h3 id="以下demo-代码依赖如下系统库">以下demo 代码依赖如下系统库，</h3>
-<pre><code class="language-c++">#include &lt;stdio.h&gt;
-#include &lt;string&gt;
+  <h1 id="usb-转串口工具-minicom-setup">USB 转串口工具 minicom Setup</h1>
+<h3 id="准备工作">准备工作</h3>
+<ol>
+<li>安装 minicom 串口调试工具, 通过 Homebrew 安装即可</li>
+</ol>
+<pre><code class="language-bash">brew install minicom
 </code></pre>
-<h3 id="基础数据类型的相互转换其实有多种方式-以下多是通过-printf-方式来完成的">基础数据类型的相互转换其实有多种方式。以下多是通过 <code>printf</code> 方式来完成的。</h3>
-<h3 id="int-转-char">int 转 char *</h3>
-<pre><code class="language-c++">char* int_to_char_ptr(int src) {
-    char result[30] = &quot;&quot;;
-    sprintf(result, &quot;%d&quot;, src);
-    char* ret_value = result;
-    return ret_value;
-}
+<h3 id="setup">Setup</h3>
+<ol>
+<li>将串口线连接到电脑USB上，查看当前命令行查看连接的串口号</li>
+</ol>
+<pre><code class="language-bash">ls /dev/tty*
 </code></pre>
-<h3 id="double-转-char">double 转 char*</h3>
-<pre><code class="language-c++">char* double_to_char_ptr(double src) {
-    char result[30] = &quot;&quot;;
-    // 如果需要保留小数x位数, eg: %.xlf
-    sprintf(result, &quot;%lf&quot;, src);
-    char* ret_value = result;
-    return ret_value;
-}
+<p><img src="https://raw.githubusercontent.com/Davidxiaoshuo/blog_source/master/resources/images/serial_port_num.jpg" alt></p>
+<blockquote>
+<p><strong><em>上图中的 <code>/dev/tty.usbserial-14340</code> 就是 USB 的串口号</em></strong></p>
+</blockquote>
+<ol start="2">
+<li>将串口号配置给串口工具 <code>minicom</code></li>
+</ol>
+<ul>
+<li>命令打开串口工具</li>
+</ul>
+<pre><code class="language-bash">minicom -s
 </code></pre>
-<h3 id="float-转-char">float 转 char*</h3>
-<pre><code class="language-c++">char* float_to_char_ptr(float src) {
-    char result[30] = &quot;&quot;;
-    // 如果需要保留小数x位数, eg: %.xf
-    sprintf(result, &quot;%f&quot;, src);
-    char* ret_value = result;
-    return ret_value;
-}
-</code></pre>
-<h3 id="size-t-转-char">size_t 转 char*</h3>
-<pre><code class="language-c++">char* size_t_to_char_ptr(size_t value) {
-    char result[30] = &quot;&quot;;
-    sprintf(result, &quot;%zu&quot;, value);
-    char * ret_value = result;
-    return ret_value;
-}
-</code></pre>
-<h3 id="string-转-char">string 转 char*</h3>
-<pre><code class="language-c++">char* str_to_char_array(std::string value) {
-    return const_cast&lt;char*&gt;(value.c_str());
-}
-</code></pre>
-<h3 id="char-转-string">char* 转 string</h3>
-<pre><code class="language-c++">std::string char_ptr_to_str(const char* value) {
-    std::string res;
-    res = value;
-    return res;
-}
-</code></pre>
+<p><img src="https://raw.githubusercontent.com/Davidxiaoshuo/blog_source/master/resources/images/minicom_board.jpg" alt></p>
+<ul>
+<li>通过键盘上的 <code>J</code>, <code>K</code> 或者方向键上下移动到 <code>Serial port setup</code> 选项，按回车选中，进入串口设置界面</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Davidxiaoshuo/blog_source/master/resources/images/minicom_setup.jpg" alt></p>
+<ul>
+<li>通过键盘上的大写字母 <code>A</code>  选中进入 <code>Serial Device</code> 选项，并将之前复制好的串口号粘贴在此，并按<strong><em>两次</em></strong>回车, 回到主 Setup 界面。</li>
+<li>定位到 <code>Save setup as dfl</code> 回车并选中。</li>
+<li>定位到 <code>Exit</code> 退出 Setup 界面到 串口命令终端中 或 定位到 <code>Exit from minicom</code> 退回到系统命令界面</li>
+</ul>
 
 </div>
 
