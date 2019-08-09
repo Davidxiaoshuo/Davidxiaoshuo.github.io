@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://davidxiaoshuo.github.io/android/cmake_list/</loc>
+    
+    <lastmod>2019-08-09T10:40:42.966Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://davidxiaoshuo.github.io/c++/macos_remote_disk_mount/</loc>
     
     <lastmod>2019-08-05T06:45:13.030Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://davidxiaoshuo.github.io/menu/</loc>
     
     <lastmod>2019-08-05T06:19:54.529Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://davidxiaoshuo.github.io/android/cmake_list/</loc>
-    
-    <lastmod>2019-08-04T15:52:53.685Z</lastmod>
     
   </url>
   
