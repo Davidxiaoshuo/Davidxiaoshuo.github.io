@@ -76,6 +76,7 @@ ga('send', 'pageview');
 <li>android
 <ul>
 <li><a href="/android/cmake_list">android studio cmake 编译常规设置</a></li>
+<li><a href="/android/jni_logger">Android Jni 层 Log 输出</a></li>
 </ul>
 </li>
 <li>c++
@@ -133,6 +134,7 @@ ga('send', 'pageview');
 <li>android
 <ul>
 <li><a href="/android/cmake_list">android studio cmake 编译常规设置</a></li>
+<li><a href="/android/jni_logger">Android Jni 层 Log 输出</a></li>
 </ul>
 </li>
 <li>c++
@@ -165,9 +167,7 @@ ga('send', 'pageview');
 <div class="book-post">
   <h1 id="android-studio-cmake-编译常规设置">android studio cmake 编译常规设置</h1>
 <h3 id="add-executable-指令">add_executable 指令</h3>
-<p>语法：<code>add_executable(executable_file_name [source])</code><br>
-将一组源文件 source 生成一个可执行文件。 source  可以是多个源文件，也可以是对应定义的变量<br>
-如：<code>add_executable(hello main.c)</code></p>
+<p>语法：<code>add_executable(executable_file_name [source])</code>将一组源文件 source 生成一个可执行文件。 source  可以是多个源文件，也可以是对应定义的变量  如：<code>add_executable(hello main.c)</code></p>
 <h3 id="cmake-minimun-required-version-3-4-1">cmake_minimun_required(VERSION 3.4.1)</h3>
 <p>用来指定 CMake 最低版本为3.4.1，如果没指定，执行 cmake 命令时可能会出错</p>
 <h3 id="add-subdirectory-指令">add_subdirectory 指令</h3>
@@ -246,7 +246,7 @@ target_link_libraries(compress libjpeg ${log-lib})
 <li><code>CMAKE_BINARY_DIR, PROJECT_BINARY_DIR, _BINARY_DIR</code>这三个变量指代的内容都是一样的，如果是 in-source 编译，指的是工程顶层目录，如果是 out-of-source 编译，指的是工程编译发生的目录。</li>
 <li><code>CMAKE_SOURCE_DIR, PROJECT_SOURCE_DIR, _SOURCE_DIR</code>这三个变量指代的内容也是一样的，不论哪种编译方式，都是工程顶层目录。</li>
 <li><code>CMAKE_CURRENT_SOURCE_DIR</code>当前处理的 CMakeLists.txt 所在的路径</li>
-<li><code>CMAKE_CURRENT_BINARY_DIR</code>如果是 in-source 编译，它跟 CMAKE_CURRENT_SOURCE_DIR 一致，如果是 <code>out-of-source</code> 编译，指的是 target 编译目录。使用 ADD_SUBDIRECTORY(src bin)可以修改这个变量的值；而使用 <code>SET(EXECUTABLE_OUTPUT_PATH &amp;lt; 新路径&amp;gt;)</code> 并不会对这个变量造成影响，它仅仅修改了最终目标文件存放的路径。</li>
+<li><code>CMAKE_CURRENT_BINARY_DIR</code>如果是 in-source 编译，它跟            CMAKE_CURRENT_SOURCE_DIR 一致，如果是 <code>out-of-source</code> 编译，指的是 target 编译目录。使用 ADD_SUBDIRECTORY(src bin)可以修改这个变量的值；而使用 <code>SET(EXECUTABLE_OUTPUT_PATH &amp;lt; 新路径&amp;gt;)</code> 并不会对这个变量造成影响，它仅仅修改了最终目标文件存放的路径。</li>
 <li><code>CMAKE_CURRENT_LIST_FILE</code> 输出调用这个变量的 CMakeLists.txt 的完整路径</li>
 <li><code>CMAKE_CURRENT_LIST_LINE</code> 输出这个变量所在的行</li>
 <li><code>CMAKE_MODULE_PATH</code> 这个变量用来定义自己的 CMake 模块所在的路径。如果你的工程比较复杂，有可能会自己编写一些 cmake 模块，这些 cmake 模块是随你的工程发布的，为了让 cmake 在处理 CMakeLists.txt 时找到这些模块，你需要通过 SET 指令，将自己的 cmake 模块路径设置一下。比如：<code>SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)</code> 这时候你就可以通过 INCLUDE 指令来调用自己的模块了。</li>
