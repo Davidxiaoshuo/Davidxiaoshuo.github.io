@@ -167,7 +167,7 @@ ga('send', 'pageview');
 <div class="book-post">
   <h1 id="android-jni-层-log-输出">Android JNI 层 Log 输出</h1>
 <h3 id="概述：">概述：</h3>
-<p>android 中在进行一些 C++ 底层库开发的时候难免需要一些 log 来辅助我们的开发调试，或是打印一些重要信息给到 Lib 库的使用者。在 android 中，通过 C++ 层的 <code>print</code>  Or <code>std::cout</code> 是无法再 logcat 中正常显示 log 信息的。android NDK 专门提供了相关的 <a href="https://developer.android.com/ndk/reference/group/logging" target="_blank" rel="noopener">Logging</a> 工具。</p>
+<p>android 中在进行一些 C++ 底层库开发的时候难免需要一些 log 来辅助我们的开发调试，或是打印一些重要信息给到 Lib 库的使用者。在 android 中，通过 C++ 层的 <code>print</code>  Or <code>std::cout</code> 是无法在logcat 中正常显示 log 信息的。android NDK 专门提供了相关的 <a href="https://developer.android.com/ndk/reference/group/logging" target="_blank" rel="noopener">Logging</a> 工具。</p>
 <h3 id="android-log-print-主要使用的函数">__android_log_print 主要使用的函数</h3>
 <pre><code class="language-c++">int __android_log_print(
   int prio,	//优先级
