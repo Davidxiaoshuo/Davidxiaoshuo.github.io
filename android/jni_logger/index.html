@@ -177,7 +177,15 @@ ga('send', 'pageview');
 )
 </code></pre>
 <h3 id="cmake-编译-在-cmakelists-txt-中配置需要依赖的-log-系统库">cmake 编译， 在 <code>CMakeLists.txt</code> 中配置需要依赖的 Log 系统库</h3>
-<pre><code>#指定要生成的动态库所依赖的库（系统库，外部第三方库）
+<pre><code>#查找要依赖的系统库
+find_library( # Sets the name of the path variable.
+              log-lib
+
+              # Specifies the name of the NDK library that
+              # you want CMake to locate.
+              log )
+
+#指定要生成的动态库所依赖的库（系统库，外部第三方库）
 target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
