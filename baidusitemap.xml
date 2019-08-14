@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://davidxiaoshuo.github.io/android/jni_logger/</loc>
+    <lastmod>2019-08-14</lastmod>
+  </url>  <url>
     <loc>http://davidxiaoshuo.github.io/menu/</loc>
     <lastmod>2019-08-14</lastmod>
   </url>  <url>
     <loc>http://davidxiaoshuo.github.io/home/</loc>
-    <lastmod>2019-08-14</lastmod>
-  </url>  <url>
-    <loc>http://davidxiaoshuo.github.io/android/jni_logger/</loc>
     <lastmod>2019-08-14</lastmod>
   </url>  <url>
     <loc>http://davidxiaoshuo.github.io/others/macos_terminal_themes/</loc>
