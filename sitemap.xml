@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://davidxiaoshuo.github.io/android/android_gradle_logger/</loc>
+    
+    <lastmod>2019-08-23T02:13:12.011Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://davidxiaoshuo.github.io/android/cmake_list/</loc>
+    
+    <lastmod>2019-08-23T02:08:34.602Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://davidxiaoshuo.github.io/android/jni_logger/</loc>
     
     <lastmod>2019-08-14T08:47:47.709Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>http://davidxiaoshuo.github.io/git/git_multi_account_manager/</loc>
     
     <lastmod>2019-08-14T08:04:03.585Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://davidxiaoshuo.github.io/android/cmake_list/</loc>
-    
-    <lastmod>2019-08-14T08:03:32.402Z</lastmod>
     
   </url>
   
