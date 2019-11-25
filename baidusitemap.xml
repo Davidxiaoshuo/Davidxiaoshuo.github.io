@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://davidxiaoshuo.github.io/audio/ijkplayer_01/</loc>
+    <lastmod>2019-11-25</lastmod>
+  </url>  <url>
+    <loc>http://davidxiaoshuo.github.io/android/android_jni_one/</loc>
+    <lastmod>2019-08-26</lastmod>
+  </url>  <url>
     <loc>http://davidxiaoshuo.github.io/android/android_gradle_logger/</loc>
     <lastmod>2019-08-23</lastmod>
   </url>  <url>

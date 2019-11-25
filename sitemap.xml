@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://davidxiaoshuo.github.io/audio/ijkplayer_01/</loc>
+    
+    <lastmod>2019-11-25T12:04:40.501Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://davidxiaoshuo.github.io/android/android_jni_one/</loc>
+    
+    <lastmod>2019-08-26T13:25:35.835Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://davidxiaoshuo.github.io/android/android_gradle_logger/</loc>
     
-    <lastmod>2019-08-23T02:13:12.011Z</lastmod>
+    <lastmod>2019-08-23T02:21:49.432Z</lastmod>
     
   </url>
   
