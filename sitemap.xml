@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://davidxiaoshuo.github.io/about/index.html</loc>
+    
+    <lastmod>2021-06-19T09:29:46.621Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://davidxiaoshuo.github.io/c++/cplus_type_convert/</loc>
     
     <lastmod>2021-06-19T09:12:46.881Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>http://davidxiaoshuo.github.io//404.html</loc>
     
     <lastmod>2019-08-14T08:13:41.882Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://davidxiaoshuo.github.io/about/index.html</loc>
-    
-    <lastmod>2019-08-14T07:53:34.576Z</lastmod>
     
   </url>
   
