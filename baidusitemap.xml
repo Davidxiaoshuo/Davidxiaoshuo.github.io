@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://davidxiaoshuo.github.io/iOS/swift_keyword_summary/</loc>
+    <lastmod>2021-06-21</lastmod>
+  </url>  <url>
+    <loc>http://davidxiaoshuo.github.io/iOS/swift_dynamic/</loc>
+    <lastmod>2021-06-19</lastmod>
+  </url>  <url>
     <loc>http://davidxiaoshuo.github.io/c++/cplus_type_convert/</loc>
     <lastmod>2021-06-19</lastmod>
   </url>  <url>
@@ -35,9 +41,6 @@
     <lastmod>2021-06-19</lastmod>
   </url>  <url>
     <loc>http://davidxiaoshuo.github.io/iOS/swift_override_property/</loc>
-    <lastmod>2021-06-19</lastmod>
-  </url>  <url>
-    <loc>http://davidxiaoshuo.github.io/iOS/swift_keyword_summery/</loc>
     <lastmod>2021-06-19</lastmod>
   </url>  <url>
     <loc>http://davidxiaoshuo.github.io/home/</loc>
