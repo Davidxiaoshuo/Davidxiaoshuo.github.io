@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://davidxiaoshuo.github.io/design_pattern/factory_pattern/</loc>
+    
+    <lastmod>2021-08-18T03:25:36.690Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://davidxiaoshuo.github.io/iOS/runtime/</loc>
     
-    <lastmod>2021-07-05T14:24:39.938Z</lastmod>
+    <lastmod>2021-07-05T14:27:18.468Z</lastmod>
     
   </url>
   
