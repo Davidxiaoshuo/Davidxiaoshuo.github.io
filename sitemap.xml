@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://davidxiaoshuo.github.io/iOS/swift_type_self/</loc>
+    
+    <lastmod>2021-08-19T08:04:15.323Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://davidxiaoshuo.github.io/design_pattern/factory_pattern/</loc>
     
-    <lastmod>2021-08-18T03:25:36.690Z</lastmod>
+    <lastmod>2021-08-19T08:03:45.010Z</lastmod>
     
   </url>
   
